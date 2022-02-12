@@ -1,0 +1,23 @@
+#Login {
+  .Login {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+
+    &-title {
+      margin-bottom: 8px;
+
+      &-sub {
+        margin-bottom: 24px;
+      }
+    }
+
+    .input {
+      margin-bottom: 8px;
+    }
+
+    .checkbox-label {
+      color: var(--color-text-primary);
+    }
+  }
+}

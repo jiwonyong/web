@@ -1,0 +1,85 @@
+@import "./variables";
+
+@mixin fontWeight($font) {
+  &-b {
+    @extend #{$font};
+    font-weight: 700;
+  }
+  &-m {
+    @extend #{$font};
+    font-weight: 500;
+  }
+  &-r {
+    @extend #{$font};
+    font-weight: 400;
+  }
+}
+
+// title
+.h1 {
+  font-size: 40px;
+  word-break: keep-all;
+  @include responsive-md {
+    font-size: 32px;
+  }
+  @include fontWeight(".h1");
+}
+.h2 {
+  font-size: 32px;
+  word-break: keep-all;
+  @include responsive-md {
+    font-size: 24px;
+  }
+  @include fontWeight(".h2");
+}
+.h3 {
+  font-size: 24px;
+  word-break: keep-all;
+  @include responsive-md {
+    font-size: 18px;
+  }
+  @include fontWeight(".h3");
+}
+
+.h4 {
+  font-size: 18px;
+  word-break: keep-all;
+  @include responsive-md {
+    font-size: 16px;
+  }
+  @include fontWeight(".h4");
+}
+
+// text
+.p1 {
+  font-size: 18px;
+  word-break: keep-all;
+  @include responsive-md {
+    font-size: 16px;
+  }
+  @include fontWeight(".p1");
+}
+
+.p2 {
+  font-size: 16px;
+  word-break: keep-all;
+  @include responsive-md {
+    font-size: 14px;
+  }
+  @include fontWeight(".p2");
+}
+
+.p3 {
+  font-size: 14px;
+  word-break: keep-all;
+  @include responsive-md {
+    font-size: 12px;
+  }
+  @include fontWeight(".p3");
+}
+
+.p4 {
+  font-size: 12px;
+  word-break: keep-all;
+  @include fontWeight(".p4");
+}

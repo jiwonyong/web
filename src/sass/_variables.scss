@@ -1,0 +1,33 @@
+$inner-width: 1440px;
+
+// break point
+$screen-md: 880px;
+
+@mixin responsive-md {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
+//color
+:root {
+  //text
+  --color-text-default: #222222;
+  --color-text-inverse: #ffffff;
+  --color-text-sub: #575656;
+  --color-text-disabled: #bbbbbb;
+  --color-text-primary: #ff9f45;
+  --color-text-primary-sub: #cee5d0;
+
+  //bg
+  --color-bg-default: #ffffff;
+  --color-bg-disabled: #eeeeee;
+  --color-bg-primary: #ffbf86;
+  --color-bg-primary-light: #fed2aa;
+  --color-bg-sub: #cee5d0;
+  --color-bg-sub-light: #f3f0d7;
+
+  //border
+  --color-border-default: #dddddd;
+  --color-border-primary: #ffbf86;
+}
